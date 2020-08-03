@@ -136,7 +136,7 @@ export default function CadastroFilme() {
                             const response = await api.delete(
                               `/filmes/${atual._id}`
                             );
-                            setSuccess("Categoria inserida com sucesso!");
+                            setSuccess("Categoria removida com sucesso!");
                             if (response.data.error) {
                               setError(
                                 "Houve algum erro, por favor tente novamente."

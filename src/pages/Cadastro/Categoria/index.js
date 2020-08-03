@@ -101,7 +101,7 @@ export default function CadastroCategoria() {
                           const response = await api.delete(
                             `/categorias/${categoriaAtual._id}`
                           );
-                          setSuccess("Categoria inserida com sucesso!");
+                          setSuccess("Categoria removida com sucesso!");
                           if (response.data.error) {
                             setError(
                               "Houve algum erro, por favor tente novamente."
