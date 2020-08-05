@@ -61,16 +61,16 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 ```bash
 # Create a directory
 $ mkdir spotflix
+$ cd spotflix
 
 # Clone this repository
 $ git clone https://github.com/brennogf/spotflix-frontend frontend
-$ cd..
 $ git clone https://github.com/brennogf/spotflix-backend backend
 
-# Go into the repository
-$ cd spotflix
-
-# Install dependencies
+# Go into the repository and install dependencies
+$ cd spotflix backend
+$ yarn
+$ cd ../frontend
 $ yarn
 
 # Run the app
