@@ -5,7 +5,7 @@
 </h1>
 
 <h4 align="center">
-  Netflix Clone App with React e Node.js
+  Video Sharing based on the Netflix App.
 </h4>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/brennogf/spotflix-frontend.svg">
