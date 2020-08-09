@@ -49,6 +49,7 @@ This project was developed at the [Alura Imersão React](https://www.alura.com.b
 -  [Styled-components](https://www.styled-components.com/)
 -  [React-player](https://cookpete.com/react-player/)
 -  [React-slick](https://react-slick.neostack.com/)
+-  [React-icons](https://react-icons.github.io/react-icons/)
 -  [Prop-types](https://www.npmjs.com/package/prop-types)
 -  [Dotenv](https://www.npmjs.com/package/dotenv)
 -  [Crossenv](https://www.npmjs.com/package/cross-env)
