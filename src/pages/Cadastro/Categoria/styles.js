@@ -3,6 +3,12 @@ import { MdDelete, MdUpdate } from "react-icons/md";
 
 export const Loading = styled.div`
   margin-left: 38rem;
+
+  @media (max-width: 800px) {
+    position: relative;
+    margin-left: 9rem;
+    margin-top: 0rem;
+  }
 `;
 
 export const Delete = styled(MdDelete)`
