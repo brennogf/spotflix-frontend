@@ -52,7 +52,7 @@ This project was developed at the [Alura Imersão React](https://www.alura.com.b
 -  [React-icons](https://react-icons.github.io/react-icons/)
 -  [Prop-types](https://www.npmjs.com/package/prop-types)
 -  [Dotenv](https://www.npmjs.com/package/dotenv)
--  [Crossenv](https://www.npmjs.com/package/cross-env)
+-  [Cross-env](https://www.npmjs.com/package/cross-env)
 -  [Concurrently](https://www.npmjs.com/package/concurrently)
 -  [VS Code][vc] with [EditorConfig][vceditconfig], [ESLint][vceslint] and [Prettier][vcprettier]
 
