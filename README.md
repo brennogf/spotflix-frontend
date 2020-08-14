@@ -1,68 +1,94 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    <img alt="Imersão React" src="https://res.cloudinary.com/practicaldev/image/fetch/s--VkKYeMzv--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.imgur.com/c4w638X.png" width="480" height="360" />
+    <br>
+    Spotflix
+</h1>
 
-## Available Scripts
+<h4 align="center">
+  Video Sharing based on the Netflix App.
+</h4>
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/brennogf/spotflix-frontend.svg">
 
-In the project directory, you can run:
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/brennogf/spotflix-frontend.svg">
 
-### `yarn start`
+  <a href="https://www.codacy.com/app/brennogf/spotflix-frontend?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=brennogf/spotflix-frontend&amp;utm_campaign=Badge_Grade">
+    <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/e4cc1482460841bdaa99c2e75e01f0bc.svg">
+  </a>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/brennogf/spotflix-frontend.svg">
+  <a href="https://github.com/brenngof/spotflix-frontend/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/brennogf/spotflix-frontend.svg">
+  </a>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  <a href="https://github.com/brennogf/spotflix-frontend/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/brennogf/spotflix-frontend.svg">
+  </a>
 
-### `yarn test`
+  <img alt="GitHub" src="https://img.shields.io/github/license/brennogf/spotflix-frontend.svg">
+</p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+ <img src="https://i.ibb.co/Jv0pFYs/Sem-t-tulo.png">
+</p>
+Link: http://spotflix.tk/
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## :rocket: Technologies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project was developed at the [Alura Imersão React](https://www.alura.com.br/imersao-react) with the following technologies:
 
-### `yarn eject`
+-  [ReactJS](https://reactjs.org/)
+-  [Axios](https://github.com/axios/axios)
+-  [Styled-components](https://www.styled-components.com/)
+-  [React-player](https://cookpete.com/react-player/)
+-  [React-slick](https://react-slick.neostack.com/)
+-  [React-icons](https://react-icons.github.io/react-icons/)
+-  [Prop-types](https://www.npmjs.com/package/prop-types)
+-  [Dotenv](https://www.npmjs.com/package/dotenv)
+-  [Crossenv](https://www.npmjs.com/package/cross-env)
+-  [Concurrently](https://www.npmjs.com/package/concurrently)
+-  [VS Code][vc] with [EditorConfig][vceditconfig], [ESLint][vceslint] and [Prettier][vcprettier]
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## :information_source: How To Use
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v12.18][nodejs] or higher + [Yarn v1.22.4][yarn] or higher installed on your computer. From your command line:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+# Create a directory
+$ mkdir spotflix
+$ cd spotflix
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Clone this repository
+$ git clone https://github.com/brennogf/spotflix-frontend frontend
+$ git clone https://github.com/brennogf/spotflix-backend backend
 
-## Learn More
+# Go into the repository and install dependencies
+$ cd spotflix backend
+$ yarn
+$ cd ../frontend
+$ yarn
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Run the app
+$ yarn dev
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## :memo: License
+This project is under the MIT license. See the [LICENSE](https://github.com/brennogf/spotflix-frontend/blob/master/LICENSE) for more information.
 
-### Code Splitting
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Made with ♥ by Brenno Givigier :wave: [Get in touch!](https://www.linkedin.com/in/brennogf/)
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[nodejs]: https://nodejs.org/
+[yarn]: https://yarnpkg.com/
+[vc]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+[vcprettier]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
