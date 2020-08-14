@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { IoMdArrowDropdown } from "react-icons/io";
 
-// Todo o Header
 export const HeaderContainer = styled.header`
   width: 100%;
   height: 68px;
@@ -21,7 +20,6 @@ export const HeaderContainer = styled.header`
   }
 `;
 
-// Logo da Netflix
 export const Logo = styled.div`
   img {
     max-width: 92.5px;
@@ -29,12 +27,11 @@ export const Logo = styled.div`
 
   @media (max-width: 800px) {
     img {
-      max-width: 50px;
+      max-width: 80px;
     }
   }
 `;
 
-// Menu Principal (Inicio, Filmes, Series)
 export const MenuPrincipal = styled.div`
   ul {
     position: relative;
@@ -66,7 +63,6 @@ export const MenuPrincipal = styled.div`
   }
 `;
 
-/* Menu do Perfil */
 export const MenuPerfil = styled.div`
   position: absolute;
   margin-left: 85%;

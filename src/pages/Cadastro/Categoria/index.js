@@ -7,9 +7,9 @@ import FormField from "../../../components/FormField";
 
 import api from "../../../services/api";
 import useForm from "../../../utils/useForm";
-
 import { Spinner } from "../../../components/Spinner";
-import { TableStyle, Delete, Update } from "./styles";
+
+import { TableStyle, Delete, Update, Loading } from "./styles";
 import Alert from "../../../components/Alert";
 
 export default function CadastroCategoria() {
@@ -65,7 +65,11 @@ export default function CadastroCategoria() {
         <Button>Cadastrar</Button>
       </form>
 
-      {categorias.length === 0 && <Spinner />}
+      {categorias.length === 0 && (
+        <Loading>
+          <Spinner />
+        </Loading>
+      )}
 
       {categorias.length > 0 && (
         <>
@@ -75,49 +79,50 @@ export default function CadastroCategoria() {
           {success.length > 0 && <Alert type="success">{success}</Alert>}
           <h1>Categorias cadastradas</h1>
           <TableStyle>
-            <table>
-              {categorias.map((categoriaAtual) => (
-                <tr key={`${categoriaAtual.name}`}>
-                  <td>
-                    <input
-                      className="Categoria"
-                      type="text"
-                      defaultValue={categoriaAtual.name}
-                      name={categoriaAtual.name}
-                      onChange={handleChange}
-                    />
-                  </td>
-                  <td>
-                    <a>
-                      <Update size="20" onClick={function handleUpdate(e) {}} />
-                    </a>
-                  </td>
-                  <td>
-                    <a>
-                      <Delete
-                        onClick={async function handleDelete() {
-                          setError("");
-                          setSuccess("");
-                          const response = await api.delete(
-                            `/categorias/${categoriaAtual._id}`
+            <th>Categoria</th>
+            <th>Alterar</th>
+            <th>Excluir</th>
+            {categorias.map((categoriaAtual) => (
+              <tr key={`${categoriaAtual.name}`}>
+                <td>
+                  <input
+                    className="Categoria"
+                    type="text"
+                    defaultValue={categoriaAtual.name}
+                    name={categoriaAtual.name}
+                    onChange={handleChange}
+                  />
+                </td>
+                <td>
+                  <a>
+                    <Update size="20" onClick={function handleUpdate(e) {}} />
+                  </a>
+                </td>
+                <td>
+                  <a>
+                    <Delete
+                      onClick={async function handleDelete() {
+                        setError("");
+                        setSuccess("");
+                        const response = await api.delete(
+                          `/categorias/${categoriaAtual._id}`
+                        );
+                        setSuccess("Categoria removida com sucesso!");
+                        if (response.data.error) {
+                          setError(
+                            "Houve algum erro, por favor tente novamente."
                           );
-                          setSuccess("Categoria removida com sucesso!");
-                          if (response.data.error) {
-                            setError(
-                              "Houve algum erro, por favor tente novamente."
-                            );
-                            setSuccess("");
-                          }
+                          setSuccess("");
+                        }
 
-                          setRefresh(refresh + 1);
-                        }}
-                        size="20"
-                      />
-                    </a>
-                  </td>
-                </tr>
-              ))}
-            </table>
+                        setRefresh(refresh + 1);
+                      }}
+                      size="20"
+                    />
+                  </a>
+                </td>
+              </tr>
+            ))}
             <br />
             <br />
           </TableStyle>

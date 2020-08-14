@@ -8,7 +8,7 @@ import useForm from "../../../utils/useForm";
 import api from "../../../services/api";
 
 import { Spinner } from "../../../components/Spinner";
-import { TableStyle, Delete, Update } from "./styles";
+import { TableStyle, Delete, Update, Loading } from "./styles";
 import Alert from "../../../components/Alert";
 
 export default function CadastroFilme() {
@@ -83,7 +83,11 @@ export default function CadastroFilme() {
         />
         <Button>Cadastrar</Button>
       </form>
-      {categorias.length === 0 && <Spinner />}
+      {categorias.length === 0 && (
+        <Loading>
+          <Spinner />
+        </Loading>
+      )}
       {categorias.length > 0 && (
         <>
           <br />
@@ -94,6 +98,11 @@ export default function CadastroFilme() {
           <TableStyle>
             <h1>Músicas cadastradas</h1>
             <table>
+              <th>Música</th>
+              <th>URL</th>
+              <th>Categoria</th>
+              <th>Alterar</th>
+              <th>Excluir</th>
               {categorias.map((categoriaAtual) =>
                 categoriaAtual.filmes.map((atual) => (
                   <tr key={`${atual.titulo}`}>

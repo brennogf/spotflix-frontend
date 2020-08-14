@@ -39,4 +39,11 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+body,
+input,
+button,
+textarea {
+  font-family: sans-serif;
+}
 `;

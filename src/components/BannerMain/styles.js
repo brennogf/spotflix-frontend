@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { IoMdPlay } from "react-icons/io";
+import { AiOutlineAudioMuted } from "react-icons/ai";
 
 export const BannerMainContainer = styled.section`
   height: 80vh;
@@ -77,14 +78,6 @@ ContentAreaContainer.Title = styled.h2`
   }
 `;
 
-ContentAreaContainer.Description = styled.p`
-  font-size: 20px;
-
-  @media (max-width: 800px) {
-    display: none;
-  }
-`;
-
 ContentAreaContainer.Button = styled.button`
   position: relative;
   cursor: pointer;
@@ -95,9 +88,11 @@ ContentAreaContainer.Button = styled.button`
   font-size: 20px;
   width: 151px;
   height: 46px;
+  display: inline-block;
+  margin: 0 auto;
 
   @media (max-width: 800px) {
-    margin-left: 30%;
+    display: block;
   }
 
   &:hover {
@@ -116,4 +111,17 @@ ContentAreaContainer.Button = styled.button`
 ContentAreaContainer.Button.Arrow = styled(IoMdPlay)`
   position: relative;
   margin-left: -80px;
+`;
+
+export const Muted = styled(AiOutlineAudioMuted)`
+  position: relative;
+  margin-left: 15px;
+  cursor: pointer;
+  color: var(--white);
+
+  @media (max-width: 800px) {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
 `;

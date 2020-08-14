@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { MdDelete, MdUpdate } from "react-icons/md";
 
+export const Loading = styled.div`
+  margin-left: 38rem;
+`;
+
 export const Delete = styled(MdDelete)`
   color: var(--white);
 
@@ -19,14 +23,18 @@ export const Update = styled(MdUpdate)`
   }
 `;
 
-export const TableStyle = styled.div`
-  table {
-    margin-top: 30px;
-    width: 360px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 10px;
+export const TableStyle = styled.table`
+  margin-top: 30px;
+  width: 450px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+
+  td {
+    text-align: center;
+    padding: 5px;
   }
+
   a {
     cursor: pointer;
   }
@@ -46,5 +54,9 @@ export const TableStyle = styled.div`
     &:focus {
       border-bottom-color: var(--primary);
     }
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
   }
 `;

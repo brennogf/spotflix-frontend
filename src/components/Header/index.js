@@ -30,7 +30,7 @@ export default function Header() {
           </li>
           {categorias.map((atual, index) => {
             if (index < 3) {
-              let link = "/categoria/" + atual.name;
+              const link = `/categoria/${atual.name}`;
               return (
                 <li>
                   <Link to={link}>{atual.name}</Link>
