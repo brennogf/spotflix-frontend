@@ -70,7 +70,7 @@ $ git clone https://github.com/brennogf/spotflix-frontend frontend
 $ git clone https://github.com/brennogf/spotflix-backend backend
 
 # Go into the repository and install dependencies
-$ cd spotflix backend
+$ cd backend
 $ yarn
 $ cd ../frontend
 $ yarn
