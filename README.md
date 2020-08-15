@@ -36,9 +36,10 @@
 
 
 <p align="center">
- <img src="https://i.ibb.co/Jv0pFYs/Sem-t-tulo.png">
+  <img src="https://i.ibb.co/Jv0pFYs/Sem-t-tulo.png">
+  [Site](http://spotflix.tk/)
+  [Video](https://drive.google.com/file/d/1Ey4Rj4bZckln52HHouvDH3cbgxzsDvmN/preview)
 </p>
-Link: http://spotflix.tk/
 
 ## :rocket: Technologies
 
