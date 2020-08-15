@@ -37,10 +37,9 @@
 
 <p align="center">
   <img src="https://i.ibb.co/Jv0pFYs/Sem-t-tulo.png">
-  [Site](http://spotflix.tk/)
-  [Video](https://drive.google.com/file/d/1Ey4Rj4bZckln52HHouvDH3cbgxzsDvmN/preview)
 </p>
-
+[Site](http://spotflix.tk/)
+[Video](https://drive.google.com/file/d/1Ey4Rj4bZckln52HHouvDH3cbgxzsDvmN/preview)
 ## :rocket: Technologies
 
 This project was developed at the [Alura Imersão React](https://www.alura.com.br/imersao-react) with the following technologies:
