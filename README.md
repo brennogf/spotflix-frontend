@@ -39,8 +39,8 @@
   <img src="https://i.ibb.co/Jv0pFYs/Sem-t-tulo.png">
 </p>
 <p align="center">
-    Site - http://spotflix.tk/ <br />
-    Video - https://drive.google.com/file/d/1Ey4Rj4bZckln52HHouvDH3cbgxzsDvmN/preview
+    <a href="http://spotflix.tk">Site</a> <br />
+    <a href="https://drive.google.com/file/d/1Ey4Rj4bZckln52HHouvDH3cbgxzsDvmN/preview">Video</a>
 </p>
 ## :rocket: Technologies
 
