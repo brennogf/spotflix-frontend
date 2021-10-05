@@ -1,6 +1,6 @@
 import React from "react";
-import { VideoCardContainer } from "./styles";
 import { Link } from "react-router-dom";
+import { VideoCardContainer } from "./styles";
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL.replace(
@@ -9,15 +9,15 @@ function getYouTubeId(youtubeURL) {
   );
 }
 
-function VideoCard({ videoURL }) {
+function VideoCard({ videoURL, videoTitle }) {
   const image = `https://img.youtube.com/vi/${getYouTubeId(
     videoURL
   )}/hqdefault.jpg`;
-  const link = "../player/" + getYouTubeId(videoURL);
+  const link = `../player/${getYouTubeId(videoURL)}`;
 
   return (
     <Link to={link}>
-      <VideoCardContainer url={image} />
+      <VideoCardContainer url={image} title={videoTitle} />
     </Link>
   );
 }

@@ -69,11 +69,16 @@ export const MenuPerfil = styled.div`
 
   @media (max-width: 800px) {
     margin-left: 65%;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
   }
 
   img {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -101,9 +106,9 @@ export const MenuPerfil = styled.div`
     display: none;
   }
 
-  ul li:hover > ul {
+  /* ul li:hover > ul {
     display: block;
-  }
+  } */
 
   ul ul li a {
     text-decoration: none;

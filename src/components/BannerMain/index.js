@@ -10,7 +10,7 @@ function getYouTubeId(youtubeURL) {
   );
 }
 
-export default function BannerMain({ videoTitle, videoDescription, url }) {
+export default function BannerMain({ videoTitle, url }) {
   const [playing, setPlaying] = useState(true);
   const [color, setColor] = useState("#fff");
   const youTubeID = getYouTubeId(url);

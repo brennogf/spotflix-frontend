@@ -1,11 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { VideoCardGroupContainer, CategoryLink } from "./styles";
 import VideoCard from "./components/VideoCard";
 import Slider, { SliderItem } from "./components/Slider";
-import { Link } from "react-router-dom";
 
 export default function Carousel({ ignoreFirstVideo, category }) {
-  const link = "/categoria/" + category.name;
+  const link = `/categoria/${category.name}`;
   return (
     <VideoCardGroupContainer>
       <CategoryLink>
@@ -20,7 +20,7 @@ export default function Carousel({ ignoreFirstVideo, category }) {
 
           return (
             <SliderItem key={filme.titulo}>
-              <VideoCard videoURL={filme.url} />
+              <VideoCard videoURL={filme.url} videoTitle={filme.titulo} />
             </SliderItem>
           );
         })}
