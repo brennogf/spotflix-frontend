@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { IoMdArrowDropdown } from "react-icons/io";
 
 export const HeaderContainer = styled.header`
   width: 100%;
@@ -75,6 +74,7 @@ export const MenuPerfil = styled.div`
   img {
     width: 35px;
     height: 35px;
+    border-radius: 50%;
     cursor: pointer;
   }
 
@@ -113,10 +113,4 @@ export const MenuPerfil = styled.div`
     text-decoration: underline;
     transition: 0.5s;
   }
-`;
-
-MenuPerfil.ArrowDown = styled(IoMdArrowDropdown)`
-  position: absolute;
-  margin-top: 9px;
-  cursor: pointer;
 `;

@@ -37,6 +37,7 @@ export default function Header() {
                 </li>
               );
             }
+            return atual;
           })}
         </ul>
       </MenuPrincipal>
@@ -45,7 +46,6 @@ export default function Header() {
         <ul>
           <li>
             <img src={IconePerfil} alt="Ícone do Perfil" />
-            <MenuPerfil.ArrowDown size="20" color="#fff" />
             <ul>
               <li>
                 <Link to="/cadastro/musica">Nova música</Link>
