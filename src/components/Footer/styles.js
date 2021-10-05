@@ -15,7 +15,7 @@ export const SocialIcons = styled.div`
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 6rem;
+  width: 12rem;
 
   a {
     padding-right: 1rem;
@@ -29,7 +29,7 @@ export const SocialIcons = styled.div`
 export const Copyright = styled.p`
   color: var(--gray);
   font-size: 11px;
-  margin-left: 47rem;
+  text-align: center;
 
   @media (max-width: 1000px) {
     margin-left: 0rem;
