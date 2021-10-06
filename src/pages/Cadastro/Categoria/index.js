@@ -7,7 +7,6 @@ import FormField from "../../../components/FormField";
 
 import api from "../../../services/api";
 import useForm from "../../../utils/useForm";
-import { Spinner } from "../../../components/Spinner";
 
 import { TableStyle, Delete, Update, Loading } from "./styles";
 import Alert from "../../../components/Alert";
@@ -65,12 +64,6 @@ export default function CadastroCategoria() {
         <Button>Cadastrar</Button>
       </form>
 
-      {categorias.length === 0 && (
-        <Loading>
-          <Spinner />
-        </Loading>
-      )}
-
       {categorias.length > 0 && (
         <>
           <br />
@@ -95,7 +88,7 @@ export default function CadastroCategoria() {
                 </td>
                 <td>
                   <a>
-                    <Update size="20" onClick={function handleUpdate(e) {}} />
+                    <Update size="20" onClick={function handleUpdate(e) { }} />
                   </a>
                 </td>
                 <td>

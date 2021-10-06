@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-
 import PageDefault from "../../components/PageDefault";
-import { Spinner } from "../../components/Spinner";
 import api from "../../services/api";
 import Carousel from "../../components/Carousel";
-import { Loading, Content } from "./styles";
+import { Content } from "./styles";
 
 export default function Categoria(props) {
   const [dadosIniciais, setDadosIniciais] = useState([]);
@@ -20,12 +18,6 @@ export default function Categoria(props) {
 
   return (
     <PageDefault>
-      {dadosIniciais.length === 0 && (
-        <Loading>
-          <Spinner />
-        </Loading>
-      )}
-
       <Content>
         {dadosIniciais.length > 0 &&
           dadosIniciais.map((atual) => {

@@ -21,7 +21,7 @@ export const HeaderContainer = styled.header`
 
 export const Logo = styled.div`
   img {
-    max-width: 92.5px;
+    max-width: 130px;
   }
 
   @media (max-width: 800px) {
@@ -106,9 +106,9 @@ export const MenuPerfil = styled.div`
     display: none;
   }
 
-  /* ul li:hover > ul {
+  ul li:hover > ul {
     display: block;
-  } */
+  }
 
   ul ul li a {
     text-decoration: none;

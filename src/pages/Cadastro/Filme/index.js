@@ -7,7 +7,6 @@ import Button from "../../../components/Button";
 import useForm from "../../../utils/useForm";
 import api from "../../../services/api";
 
-import { Spinner } from "../../../components/Spinner";
 import { TableStyle, Delete, Update, Loading } from "./styles";
 import Alert from "../../../components/Alert";
 
@@ -83,11 +82,6 @@ export default function CadastroFilme() {
         />
         <Button>Cadastrar</Button>
       </form>
-      {categorias.length === 0 && (
-        <Loading>
-          <Spinner />
-        </Loading>
-      )}
       {categorias.length > 0 && (
         <>
           <br />

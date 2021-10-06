@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import BannerMain from "../../components/BannerMain";
 import Carousel from "../../components/Carousel";
 import PageDefault from "../../components/PageDefault";
-import { Loading } from "./styles";
-import { Spinner } from "../../components/Spinner";
 import api from "../../services/api";
 
 export default function Home() {
@@ -20,11 +18,6 @@ export default function Home() {
   return (
     <>
       <PageDefault paddingAll={0}>
-        {dadosIniciais.length === 0 && (
-          <Loading>
-            <Spinner />
-          </Loading>
-        )}
         {dadosIniciais.length > 0 && (
           <>
             <BannerMain

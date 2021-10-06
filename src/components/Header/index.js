@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import LogoNetflix from "../../assets/img/logo.png";
 import IconePerfil from "../../assets/img/icone_perfil.png";
@@ -8,6 +8,7 @@ import { HeaderContainer, Logo, MenuPrincipal, MenuPerfil } from "./styles";
 
 export default function Header() {
   const [categorias, setCategorias] = useState([]);
+
   useEffect(() => {
     async function searchCategories() {
       const response = await api.get("/categorias");
@@ -15,11 +16,12 @@ export default function Header() {
     }
     searchCategories();
   }, []);
+
   return (
     <HeaderContainer>
       <Logo>
         <Link to="/">
-          <img src={LogoNetflix} alt="Netflix" />
+          <img src={LogoNetflix} alt="Spotflix" />
         </Link>
       </Logo>
 
